@@ -1,0 +1,504 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+
+  
+
+    <title>Task1</title>
+   
+    <link rel="stylesheet" href="task1.css">
+
+
+
+  
+    </script>
+   
+</head>
+<body>
+    <script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+
+
+
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+
+ 
+
+<nav>
+
+  <a href="#Contact">Contact</a>
+   <a href="#Blog">Blog</a>
+   <a href="#Team">Team</a>
+    <a href="#Pricing">Pricing </a>
+   <a href="#box1">Product</a>
+   <a href="#home">Home</a>
+
+</nav>
+
+
+<section class="intro">
+  <h1>One Page Promising to fulfill all your needs</h1>
+  <p>This is a Photoshop version of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati amet
+      fugiat quibusdam aliquam blanditiis. Totam.
+  </p>
+</section>
+<div class="learn-more">
+  <button type="button">Learn More</button>
+  <button type="button">Learn More</button>
+</div>
+
+
+<div id="slider10">
+  <figure>
+    <img src="C:\Users\adoff\Documents\images\3.jpg">
+    <img src="C:\Users\adoff\Documents\images\2.jpg">
+    <img src="C:\Users\adoff\Documents\images\space.jpg">
+    <img src="C:\Users\adoff\Documents\images\4.jpg">
+  
+  </figure>
+</div>
+
+
+        
+
+
+
+
+ 
+           <div class="welcome">
+            <h1>Welcome to Zippy</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, earum! Perferendis cupiditate veritatis
+                suscipit similique dignissimos. Impedit voluptatibus iure neque dolore commodi nulla vero distinctio.
+            </p>
+            <img src="C:\Users\adoff\Documents\images\umbr.png" alt="">
+    
+        </div>
+        <div class="about0">
+            <div class="card" id="cardid-1">
+                <img src="C:\Users\adoff\Documents\images\icon1.png" alt=""><br><br>
+                <h3>Lorem Ipsum</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eos eius nesciunt quo consequuntur
+                    accusamus, enim facere pariatur unde libero.</p><br>
+                <button type="button">Learn More</button>
+            </div>
+            <div class="card" id="cardid-2">
+                <img src="C:\Users\adoff\Documents\images\icon2.png" alt=""><br><br>
+                <h3>Dolor Ipsum</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eos eius nesciunt quo consequuntur
+                    accusamus, enim facere pariatur unde libero.</p><br>
+                <button type="button">Learn More</button>
+            </div>
+            <div class="card" id="cardid-3">
+                <img src="C:\Users\adoff\Documents\images\icon3.png" alt=""><br><br>
+                <h3>Consecutive</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eos eius nesciunt quo consequuntur
+                    accusamus, enim facere pariatur unde libero.</p><br>
+                <button type="button">Learn More</button>
+            </div>
+    
+        </div>
+
+
+          <div id="box1">
+            <div class="head0">
+              <h2>Project</h2>
+
+            </div>
+        
+            <div class="container1">
+         
+              <img src="C:\Users\adoff\Documents\images\a.jpg" alt="" class="image">
+              <div class="overlay1">
+                <div class="text1">Project</div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores id distinctio voluptate ipsam pariatur quaerat repellat omnis quod optio eos aliquid praesentium, ex atque laboriosam officiis dolorum autem eligendi aspernatur.</p>
+              </div>
+          </div>
+    
+
+            <div class="container2">
+         
+              <img src="C:\Users\adoff\Documents\images\computer.jpg" alt="" class="image">
+              <div class="overlay2">
+                <div class="text2">Project</div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores id distinctio voluptate ipsam pariatur quaerat repellat omnis quod optio eos aliquid praesentium, ex atque laboriosam officiis dolorum autem eligendi aspernatur.</p>
+              </div>
+
+          </div>
+
+          <div class="container3">
+         
+            <img src="C:\Users\adoff\Documents\images\b.jpg" alt="" class="image">
+            <div class="overlay3">
+              <div class="text3">Project</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores id distinctio voluptate ipsam pariatur quaerat repellat omnis quod optio eos aliquid praesentium, ex atque laboriosam officiis dolorum autem eligendi aspernatur.</p>
+            </div>
+
+        </div>
+
+        <div class="container4">
+         
+          <img src="C:\Users\adoff\Documents\images\computer.jpg" alt="" class="image">
+          <div class="overlay4">
+            <div class="text4">Project</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores id distinctio voluptate ipsam pariatur quaerat repellat omnis quod optio eos aliquid praesentium, ex atque laboriosam officiis dolorum autem eligendi aspernatur.</p>
+          </div>
+
+       </div>
+       </div>
+   
+      <div id="price0">
+        <h2>Pricing Table</h2>
+        <div class="standard">
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Standard Plan</li>
+              <li class="grey">Free</li>
+              <li>2GB Available</li>
+              <li>15 Max Contact</li>
+              <li>30 Domains</li>
+              <li>Ongoing Ads</li>
+              <li class="grey"><a href="#" class="button">Buy Now</a></li>
+            </ul>
+          </div>
+          
+          <div class="columns">
+            <ul class="price">
+              <li class="header" style="">Business Plan </li>
+              <li class="grey">195/Month</li>
+              <li>10 GB Available</li>
+              <li>75 Max contact</li>
+              <li>120 Domains</li>
+              <li>Free Ads</li>
+              <li class="grey"><a href="#" class="button">Buy Now</a></li>
+            </ul>
+          </div>
+          
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Premium Plan</li>
+              <li class="grey">145/ Month</li>
+              <li>100GB</li>
+              <li>Unlimited Contact</li>
+              <li>unlimited Domain</li>
+              <li>Free Ads</li>
+              <li class="grey"><a href="#" class="button">Buy Now</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="videocontainer">
+        <h1>Video Projects</h1>
+        <video src="C:\Users\adoff\Documents\images\v1.mp4" width="600" height="500" controls></video>
+        <video src="C:\Users\adoff\Documents\images\v2.mp4" width="600" height="500" controls></video>
+        <video src="C:\Users\adoff\Documents\images\v3.mp4" width="600" height="500" controls></video>
+    </div>
+ 
+    <div class="container">
+
+      <h1 style="text-align:center;">Zeppy Team </h1>
+      <div class="row">
+      <div class="col-md-3 col-sm-6">
+      <div class="our-team">
+      <img src="C:\Users\adoff\Documents\images\dragos.jpg" alt="">
+      <div class="team-content">
+      <h3 class="team-prof">
+      Dragos
+      <small>Team member designation</small>
+      </h3>
+      <ul class="social-link">
+      <li><a href="#" class="fab fa-facebook"></a></li>
+      <li><a href="#" class="fab fa-google"></a></li>
+      <li><a href="#" class="fab fa-twitter"></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+      <div class="our-team">
+      <img src="C:\Users\adoff\Documents\images\shipman.jpg" alt="">
+      <div class="team-content">
+      <h3 class="team-prof">
+      Shipman
+      <small>Team member designation</small>
+      </h3>
+      <ul class="social-link">
+      <li><a href="#" class="fab fa-facebook"></a></li>
+      <li><a href="#" class="fab fa-google"></a></li>
+      <li><a href="#" class="fab fa-twitter"></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      
+      
+      <div class="col-md-3 col-sm-6">
+      <div class="our-team">
+      <img src="C:\Users\adoff\Documents\images\austin.jpg" alt="">
+      <div class="team-content">
+      <h3 class="team-prof">
+      Austin
+      <small>Team member designation</small>
+      </h3>
+      <ul class="social-link">
+      <li><a href="#" class="fab fa-facebook"></a></li>
+      <li><a href="#" class="fab fa-google"></a></li>
+      <li><a href="#" class="fab fa-twitter"></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      
+   
+      
+      <div class="col-md-3 col-sm-6">
+      <div class="our-team">
+      <img src="C:\Users\adoff\Documents\images\gregori.jpg" alt="">
+      <div class="team-content">
+      <h3 class="team-prof">
+      Gregori
+      <small>Team member designation</small>
+      </h3>
+      <ul class="social-link">
+      <li><a href="#" class="fab fa-facebook"></a></li>
+      <li><a href="#" class="fab fa-google"></a></li>
+      <li><a href="#" class="fab fa-twitter"></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+      <div class="our-team">
+      <img src="C:\Users\adoff\Documents\images\etty.jpg" alt="">
+      <div class="team-content">
+      <h3 class="team-prof">
+      Etty
+      <small>Team member designation</small>
+      </h3>
+      <ul class="social-link">
+      <li><a href="#" class="fab fa-facebook"></a></li>
+      <li><a href="#" class="fab fa-google"></a></li>
+      <li><a href="#" class="fab fa-twitter"></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+      <div class="our-team">
+      <img src="C:\Users\adoff\Documents\images\proriat.jpg" alt="">
+      <div class="team-content">
+      <h3 class="team-prof">
+      Proriat
+      <small>Team member designation</small>
+      </h3>
+      <ul class="social-link">
+      <li><a href="#" class="fab fa-facebook"></a></li>
+      <li><a href="#" class="fab fa-google"></a></li>
+      <li><a href="#" class="fab fa-twitter"></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      
+
+      <div class="col-md-3 col-sm-6">
+        <div class="our-team">
+        <img src="C:\Users\adoff\Documents\images\yogendra.jpg" alt="">
+        <div class="team-content">
+        <h3 class="team-prof">
+        Yogendra 
+        <small>Team member designation</small>
+        </h3>
+        <ul class="social-link">
+        <li><a href="#" class="fab fa-facebook"></a></li>
+        <li><a href="#" class="fab fa-google"></a></li>
+        <li><a href="#" class="fab fa-twitter"></a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+      
+    
+        
+
+    
+    <div class="main">
+
+      <h1>BLOG</h1>
+      <hr>
+    <div class="row">
+      <div class="column1">
+        <div class="content">
+          <img src="C:\Users\adoff\Documents\images\t1.jpg" alt="Mountains" style="width:100%">
+          <h3>Work</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="content">
+          <img src="C:\Users\adoff\Documents\images\t2.jpg" alt="Lights"  style="width:100%">
+          <h3>Work</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="content">
+          <img src="C:\Users\adoff\Documents\images\t3.jpg" alt="Nature" style="width:100%">
+          <h3>Work</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+      </div>
+      
+    </div>
+    <h1>My First Google Map</h1>
+
+    <script>
+      function initMap() {
+        var test= {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: test
+        });
+        var marker = new google.maps.Marker({
+          position: test,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src=
+"https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
+
+
+    
+
+<div class="Contact">
+  <div class="map">
+      <img src="C:\Users\adoff\Documents\images\map.png" alt="" width="100%">
+  </div>
+  <div class="form">
+      <h1>Contact Us</h1>
+
+      <form action="backend.php">
+          <label for="name">Name</label><br>
+          <input type="text"><br>
+          <label for="email">Email</label><br>
+          <input type="email"><br>
+          <label for="sub">Subject</label><br>
+          <input type="text"><br>
+          <label for="Message">Message</label><br>
+          <textarea name="msg" id="" cols="20" rows="5"></textarea><br>
+          <button type="button">SEND</button>
+
+      </form>
+  </div>
+
+</div>
+
+
+ <footer>
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">Office Address </div>
+         <p>lorem ipsum doron 234,
+        1200 consectetur
+      adposting</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>123-456-789</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>ZIPPY@gmail.com</a>
+         </div>
+       </div>
+     </div>
+    
+     <div class="right box">
+       <div class="topic">Follow Us </div>
+       <form action="#">
+         <div class="media-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-youtube"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   
+ </footer>
+
+
+
+
+         
+</body>
+</html>
